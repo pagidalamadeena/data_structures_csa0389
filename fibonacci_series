@@ -1,0 +1,19 @@
+//fibonacci series
+#include<stdio.h>
+int main()
+{
+	int count,n,t1=0,t2=1,temp=0;
+	printf("No.of terms:");
+	scanf("%d",&n);
+	printf("Fibonacci series:%d %d",t1,t2);
+	count=3;
+	while(count<=n)
+	{
+		temp=t1+t2;
+		t1=t2;
+		t2=temp;
+		++count;
+		printf(" %d\t",temp);
+	}
+	return 0;
+}
